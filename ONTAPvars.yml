@@ -1,3 +1,4 @@
+#Variable File for Ansible configuration. Reference variable in Ansible yml with "{{ variable }}"
 hostname: "172.16.209.158"
 username: "admin"
 password: "Password1!"
