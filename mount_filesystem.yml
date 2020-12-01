@@ -1,11 +1,12 @@
+#Mount Minio NFS Mount
 - hosts: localhost
   gather_facts: false
   tasks:
 
     - name: Mount an NFS volume
       ansible.posix.mount:
-        src: 172.16.209.200:/minio_vol
-        path: /media/minio
+        src: 172.16.209.200:/netappfiles
+        path: /media/netappfiles
         opts: rw,sync,hard,intr
         state: mounted
         fstype: nfs
