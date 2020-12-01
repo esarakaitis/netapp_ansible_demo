@@ -7,7 +7,7 @@
       password: "{{ password }}"
       https: true
       validate_certs: false
-  vars_files: /root/ONTAPvars.yml
+  vars_files: /root/netapp_ansible_demo/ONTAPvars.yml
   tasks:
 
     - name: Install NetApp simulator Licenses
@@ -17,15 +17,11 @@
         license_code: "{{ item }}"
         <<: *login
       loop:
-        - CAYHXPKBFDUFZGABGAAAAAAAAAAA
-        - APTLYPKBFDUFZGABGAAAAAAAAAAA
-        - WSKTAQKBFDUFZGABGAAAAAAAAAAA
-        - CGVTEQKBFDUFZGABGAAAAAAAAAAA
-        - OUVWXPKBFDUFZGABGAAAAAAAAAAA
-        - QFATWPKBFDUFZGABGAAAAAAAAAAA
-        - UHGXBQKBFDUFZGABGAAAAAAAAAAA
-        - GCEMCQKBFDUFZGABGAAAAAAAAAAA
-        - KYMEAQKBFDUFZGABGAAAAAAAAAAA
+        - YVUCRRRRYVHXCFABGAAAAAAAAAAA
+        - WKQGSRRRYVHXCFABGAAAAAAAAAAA
+        - SOHOURRRYVHXCFABGAAAAAAAAAAA
+        - YBSOYRRRYVHXCFABGAAAAAAAAAAA
+        - KQSRRRRRYVHXCFABGAAAAAAAAAAA
         - SWBBDQKBFDUFZGABGAAAAAAAAAAA
         - YDPPZPKBFDUFZGABGAAAAAAAAAAA
         - INIIBQKBFDUFZGABGAAAAAAAAAAA
