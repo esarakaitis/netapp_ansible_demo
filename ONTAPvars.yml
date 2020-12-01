@@ -5,4 +5,6 @@ password: "Password1!"
 clustername: homecluster-01
 ntpservers: 216.239.35.8
 vserver: vserver
+subnet: 172.16.209.0/24
+iprange: 172.16.209.201-172.16.209.220
 
