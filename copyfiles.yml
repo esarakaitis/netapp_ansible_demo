@@ -1,0 +1,10 @@
+- hosts: localhost
+  gather_facts: false
+  tasks:
+
+    - name: Copy Virtual Storage Console for VMware vSphere files into share
+      copy: src={{ item.src }} dest={{ item.dest }}
+      with_items:
+      - { src: '/root/NETAPP/netapp_sra_9.7.1_ontap_64bit.msi', dest: '/media/minio/netapp_sra_9.7.1_ontap_64bit.msi' }
+      - { src: '/root/NETAPP/netapp_sra_9_7_1.tar.gz', dest: '/media/minio/netapp_sra_9_7_1.tar.gz' }
+      - { src: '/root/NETAPP/netapp-unified-virtual-appliance-for-vsc-vp-sra-9.7.1-upgrade-6181-20200902_2347.iso', dest: '/media/minio/netapp-unified-virtual-appliance-for-vsc-vp-sra-9.7.1-upgrade-6181-20200902_2347.iso' }
