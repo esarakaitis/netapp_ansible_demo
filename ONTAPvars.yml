@@ -1,0 +1,7 @@
+hostname: "172.16.209.158"
+username: "admin"
+password: "Password1!"
+clustername: homecluster-01
+ntpservers: 216.239.35.8
+vserver: vserver
+
