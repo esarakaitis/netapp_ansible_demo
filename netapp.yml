@@ -78,13 +78,13 @@
     - name: Create Additional Volume within Vserver
       na_ontap_volume:
         state: present
-        name: minio_vol
+        name: netappfiles
         vserver: "{{ vserver }}"
         aggregate_name: aggr1
         size: 2
         size_unit: gb
         policy: default
-        junction_path: "/minio_vol"
+        junction_path: "/netappfiles"
         percent_snapshot_space: 0
         space_guarantee: none
         volume_security_style: unix
