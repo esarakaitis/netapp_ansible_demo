@@ -1,7 +1,13 @@
-#Mount Minio NFS Mount
+#Mount NetApp NFS Mount
 - hosts: localhost
   gather_facts: false
   tasks:
+    - name: Create a directory if it does not exist
+      file:
+        path: /media/netappfiles
+        state: directory
+        mode: '0755'
+
 
     - name: Mount an NFS volume
       ansible.posix.mount:
